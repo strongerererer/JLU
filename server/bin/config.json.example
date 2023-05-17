@@ -1,0 +1,14 @@
+{
+	"global": {
+		"loglevel": "3",
+		"logtostderr": "false",
+		"config": "./bin/config/",
+		"proxy": ""
+	},
+	"room": { 
+		"listen": ":8071",
+		"local": "192.168.152.130:8071",
+		"groupid":"0",
+		"log": "./log/log_room.log"
+	}
+}
