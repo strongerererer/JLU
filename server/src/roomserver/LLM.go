@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	ChatGPTKey = "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"
+	ChatGPTKey = "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"
 )
 const (
 	LLM_ChatGPT = 1
