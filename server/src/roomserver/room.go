@@ -199,31 +199,6 @@ func (this *Room) Loop() {
 	}
 }
 
-func (this *Room) doChatGPTTest() {
-
-	if len(this.chatList) >= 50 {
-		return
-	}
-
-	glog.Info("doChatGPTTest")
-
-	for _, p := range this.players {
-
-		text := p.doChatGPT("随机帮我说一句话")
-		if len(text) != 0 {
-			this.chatList = append(this.chatList, ChatInfo{
-				Id:   p.id,
-				Name: p.name,
-				Text: text,
-				Tm:   time.Now().Unix(),
-			})
-		}
-
-		glog.Info("[chat] 玩家", p.name, "说: ", text)
-		return
-	}
-}
-
 func (this *Room) onChat(token string, text string) {
 
 	if len(this.waitActionList) == 0 {

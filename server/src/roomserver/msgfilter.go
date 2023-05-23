@@ -27,7 +27,7 @@ func NewMsgFilter() *MsgFilter {
 func (this *MsgFilter) GodMsg(msg string) {
 
 	this.msglist = append(this.msglist, &MsgItem{
-		Name:    "上帝",
+		Name:    "微信读书",
 		Content: msg,
 		MsgType: MsgFilterType_None,
 	})
@@ -46,7 +46,7 @@ func (this *MsgFilter) PlayerMsg(player *Player, msg string) {
 func (this *MsgFilter) PrivateMsg(player *Player, msg string) {
 
 	this.msglist = append(this.msglist, &MsgItem{
-		Name:        "上帝",
+		Name:        "微信读书",
 		Content:     msg,
 		MsgType:     MsgFilterType_None,
 		PrivateId:   player.id,

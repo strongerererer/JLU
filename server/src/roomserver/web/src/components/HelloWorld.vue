@@ -42,7 +42,7 @@ const count = ref(0)
                             </g>
                         </svg>
 
-                        <span class="mt-1">全球领先的人工智能杀平台</span>
+                        <span class="mt-1">全球领先的人工智能平台</span>
 
                     </div>
                     <div class="modal-body">
